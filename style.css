@@ -32,7 +32,7 @@ h3 {
 
 /*Style logo in top navigation bar */
 .topnav img {
-  height: 1rem;
+  height: 1.5rem;
   padding: 14px 16px;
 }
 
@@ -58,7 +58,7 @@ h3 {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* Style the active link (or home/logo) */
@@ -72,19 +72,25 @@ h3 {
   to {opacity: 1;}
 }
 
-#landinglogo {
-  margin-top: 1rem;
-  animation-name: fadein;
-  animation-duration: 3s;
-  animation-delay: 0;
-  animation-timing-function: ease-in;
-}
-
 /*styling for project panels*/
 .project {
   min-height: 100%;
   width: auto;
   display: flex;
+  }
+
+#home {
+    margin-top: 1rem;
+}
+
+#landinglogo {
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    max-height: 50%;
+    width: auto;
+    margin: auto;
   }
 
 .description {
@@ -165,9 +171,13 @@ h3 {
     min-height: 80%;
   }
 
+  .topnav a.icon {
+    font-size: 1rem;
+  }
+
   .topnav img {
     height: 1rem;
-    padding: 7px 14px;
+    padding: 10px 14px;
   }
 
   /*project1*/
