@@ -1,9 +1,86 @@
-/*main*/
+/*styles for whole site*/
+html {
+  font-size: 40px;
+}
+
 html, body {
   height: 100%;
   margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  color: rgba(201, 179, 177, 1);
+  font-weight: bold;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/*Style logo in top navigation bar */
+.topnav img {
+  height: 1rem;
+  padding: 14px 16px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  padding: 14px 16px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  padding: 14px 16px;
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1rem;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}
+
+/* The animation code */
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#landinglogo {
+  margin-top: 1rem;
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-delay: 0;
+  animation-timing-function: ease-in;
+}
+
+/*styling for project panels*/
 .project {
   min-height: 100%;
   width: auto;
@@ -14,13 +91,14 @@ html, body {
   display: flex;
   align-items: center;
   min-height: 100%;
-  min-width: 75%;
+  width: 75%;
   background-color: rgba(40, 40, 40, 0.7);
 }
 
 .text {
   margin-left: 10%;
   color: white;
+  margin-right: 10%;
   }
 
 .text, h2 {
@@ -30,24 +108,87 @@ html, body {
 
 .project, button {
   margin: auto auto;
-  height: 10%;
   border: none;
   background-color: black;
   color: white;
 }
 
+#more {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 1rem 0;
+}
+
 /*project1*/
 #p1 {
-  background-image: url(Resources/EastwoodMain.jpg);
+  background-image: url(Resources/EastwoodMainPhone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*project2*/
 #p2 {
-  background-image: url(Resources/VillaMain.jpg);
+  background-image: url(Resources/VillaMainPhone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*project3*/
+#p3 {
+  background-image: url(Resources/ApartmentMainPhone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*otherprojects*/
+#other {
+  background-image: url(Resources/OtherMainPhone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*about*/
+
+/*desktop size rules*/
+@media only screen and (min-width: 1024px) {
+
+  html {
+    font-size: 1.5rem;
+  }
+
+  .project {
+    height: 80%;
+  }
+
+  .description {
+    margin: auto 0;
+    min-height: 80%;
+  }
+
+  .topnav img {
+    height: 1rem;
+    padding: 7px 14px;
+  }
+
+  /*project1*/
+  #p1 {
+    background-image: url(Resources/EastwoodMain.jpg);
+  }
+
+  /*project2*/
+  #p2 {
+    background-image: url(Resources/VillaMain.jpg);
+  }
+
+  /*project3*/
+  #p3 {
+    background-image: url(Resources/ApartmentMain.jpg);
+  }
+
+  /*otherprojects*/
+  #other {
+    background-image: url(Resources/OtherMain.jpg);
+  }
+
+  /*about*/
+}

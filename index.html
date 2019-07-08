@@ -2,10 +2,36 @@
 <html>
   <head>
     <title>Infinity Studios</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+<body>
+
+  <!-- Top Navigation Menu -->
+  <nav class="topnav">
+    <a href="#home" class="active"><img src="Resources/ISLogo.png" alt='logo'></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#p1">Project 1</a>
+      <a href="#p2">Project 2</a>
+      <a href="#p3">Project 3</a>
+      <a href="#other">Other Projects</a>
+      <a href="#about">About</a>
+    </div>
+
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+    <!--Landing Page-->
+    <div class="project" id="home">
+      <img id="landinglogo" src="Resources/ISLogoFull.png" alt="main logo">
+    </div>
 
     <!--project 1-->
     <div class="project" id="p1">
@@ -16,7 +42,7 @@
           <h4>Location, Date</h4>
         </div>
       </div>
-      <button><a>MORE +</a></button>
+      <button><a id="more">MORE</a></button>
     </div>
 
     <!--project 2-->
@@ -28,7 +54,7 @@
           <h4>Location, Date</h4>
         </div>
       </div>
-      <button><a>MORE +</a></button>
+      <button><a id="more">MORE</a></button>
     </div>
 
     <!--project 3-->
@@ -40,7 +66,7 @@
           <h4>Location, Date</h4>
         </div>
       </div>
-      <button><a>MORE +</a></button>
+      <button><a id="more">MORE</a></button>
     </div>
 
     <!--Misc Projects-->
@@ -52,20 +78,20 @@
           <h4>Location, Date</h4>
         </div>
       </div>
-      <button><a>MORE +</a></button>
+      <button><a id="more">MORE</a></button>
     </div>
 
     <!--About-->
     <div class="project" id="about">
       <div class="description">
         <div class="text">
-          <h3></h3>
+          <h3>About</h3>
           <h2>ABOUT ME</h2>
           <h4>Location, Date</h4>
         </div>
       </div>
-      <button><a>MORE +</a></button>
+      <button><a id="more">MORE</a></button>
     </div>
 
-  </body>
+</body>
 </html>
